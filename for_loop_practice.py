@@ -188,3 +188,103 @@ syntax:- range(start, stop)
 # word = "programming"
 # for i in range(1,len(word)-2):
 #     print(word[i:i+2])#rogr
+
+#v7.4. range() with three parameter
+'''
+syantax:- range(start, stop, step)
+start, start+step...<max_valid>
+'''
+# for j in range(2,10,2):
+#     print(j) #2 4 6 8 10
+
+# or 
+
+# for j in 2,4,6,8,10:
+#     print(j)
+
+#v7.4. range() with three parameter  Basic
+# print(list(range(5,20,6))) # [5, 11, 17]
+# print(list(range(2,10,3))) # [2, 5, 8]
+# print(list(range(10,2,-1))) # [10, 9, 8, 7, 6, 5, 4, 3]
+
+#v7.5 range() with three parameter Intermediate
+
+# Q.13 Wap to print every other character in a string capitalized
+
+# word = "Hello Word"
+
+# for i in range(0,len(word),2):
+#     print(word[i].capitalize(), end="")
+
+# Q14. WAP to print first sequence of odd numbers of +ve
+# numbers that are smaller than 50
+
+# odd_num = []
+# n = 51
+# for i in range(1,n,2):
+#     odd_num.append(i)
+# print(odd_num)
+
+# Q.15 WAP to get list first 10 of multiples of 5
+# mul_of_five=[] 
+# n = 10
+# for i in range(5,5*n+1,5):
+#     mul_of_five.append(i)
+
+# print(mul_of_five)
+
+#v7.5 range() with Negative Parameter
+'''
+range(stop)
+if stop<0---->[]
+'''
+# print(list(range(-5))) # []
+
+'''
+range(start, stop)
+if start<0--> start. start+1...0, stop-1
+'''
+# print(list(range(-2,2))) # [-2, -1, 0, 1]
+
+'''
+Note:- if stop parameter is -ve so will get []
+'''
+# print(list(range(2,-5))) # []
+
+'''
+if  start<0
+    stop<0    ===>[start,....stop-1]
+    start<0
+'''
+
+'''
+if range(start, stop, step)
+if start>stop
+    step<0     ===>[start,start-step...,<last_valid>]
+'''
+# print(list(range(7,1,-2)))
+
+# v8. Iterating over Iterables
+'''
+Goal:- Run the body of the for loop once
+       for every element in the iterable
+
+      syntax: - for <var> in <iteragble>:
+                    code
+'''
+
+# for num in [1,2,3,4,5]:
+#     print(num)
+
+# for num in (1,2,4,5):
+#     print(num)
+
+# for num in {1,4,5,7}:
+#     print(num)
+
+# for key in {"a":1, "b":2, "c":3}:
+#     print(key)
+
+# data = {"a":1, "b":2, "c":3}
+# for value in data:
+#     print(data[value])
