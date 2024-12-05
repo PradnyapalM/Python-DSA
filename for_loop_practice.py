@@ -288,3 +288,131 @@ Goal:- Run the body of the for loop once
 # data = {"a":1, "b":2, "c":3}
 # for value in data:
 #     print(data[value])
+
+#Q16. Wap to remove duplicate characters in the string
+# word = "aaabbbccccdddddeeeefff"
+# new_word = ""
+# for char in word:
+#     if char not in new_word:
+#         new_word = new_word + char
+# print(new_word)
+
+#Q16. Wap to iterate all the keys from the dictionaries
+
+'''
+chemical_elements = {
+    "H": "Hydrogen",
+    "He": "Helium",
+    "Li": "Lithium",
+}
+'''
+
+# for key in chemical_elements.keys():
+#     print(key)
+
+#Q17. Wap to iterate all the values from the dictionaries
+
+# for value in chemical_elements.values():
+#     print(value)
+
+#Q17. Wap to iterate all the keys and values from the dictionaries
+
+# for key, value in chemical_elements.items():
+#     print(key, value)
+
+#v8.1 For Loop and the enumrate function()
+
+'''
+Purpose:- To automaticall keep track of counter while
+          iterating over an iterable
+          [counter + item]
+'''
+# example for normal code(count the no of elements in the list)
+# x = ["a","b","c","d"]
+# count = 0
+# for i in x:
+#     print("No of items is ", i)
+#     count = count + 1
+# print("No of elements in the list is ",count)
+
+
+# Using enumrate function()
+
+# print(enumerate(x))
+# print(list(enumerate(x)))
+
+#v8.2 enumrate function() and for loops
+
+'''
+syntax:- for<var1>,<var2> in enumerate(<iterable>):
+                code
+        <var1>--->counter
+        <var2>--->items
+'''
+# x = ["a", "b", "c", "d"]
+# print(list(enumerate(x)))
+
+# for index, items in enumerate(x):
+#     print("for index is", index, "for item is", items)
+
+#Q18. Wap to check the list of values is even if yes then must multiply that value by 2
+# x = [1,4,6,3,6,8,4,9,4,5]
+# print("Given_list", x)
+# for index, num in enumerate(x):
+#     if num % 2 == 0:
+#         x[index]=num*2
+# print("new_list", x)
+
+# without enumerate()
+# for num in range(len(x)):
+#     if x[num]%2==0:
+#         x[num] = x[num]*2
+
+# print("new_list", x)
+
+#Q19. Wap to check the count of cities using enumrate function A->B->C->D
+
+# cities = ["A","B", "C", "D"]
+
+# for count, city in enumerate(cities):
+#     if count == len(cities):
+#         print("Total no of cities is", city)
+#     else:
+#         print(city,"->", end="")
+
+# v.9 For loop with sorted and reversed() function
+'''
+Purpose:- Return a sorted copy of iterable to use it in
+          the for loop.
+syntax:- sorted<iterable>
+
+
+'''
+# example for sorted function if we dont use
+
+# a = [6,3,1,5,9,4,6,5]
+# print("Original list is", a)
+# for num in a:
+#     print(num, end="")
+
+# if we use sorted function
+# print(sorted(a))
+
+'''
+sorted in for loop
+Syntax:-->  for <var> in sorted(<iterable>):
+                   # code
+    it will return newq sorted copy of iterable
+    and it dosent modify the original iterable
+    reverse = True --- To make it decending order
+'''
+# a = [5,9,2,4,2,1]
+
+# for item in sorted(a, reverse=True):
+#     print(item, end=" ")
+
+'''
+reversed() in python
+Goal:- To iterate over an iterable in order without mutating it.
+'''
+
