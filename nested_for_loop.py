@@ -14,3 +14,6 @@ syntax:---> for <var1> in <iter1>:
 # for i in range(4):
 #     for j in range(2):
 #         print(i,j)
+
+# print(list(range(1)))
+# print(range(5))
