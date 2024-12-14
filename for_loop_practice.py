@@ -416,4 +416,3 @@ reversed() in python
 Goal:- To iterate over an iterable in order without mutating it.
 '''
 
-
