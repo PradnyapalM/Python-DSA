@@ -117,13 +117,46 @@
 
 # Q7 Find the only Odd imp
 
-def onlyOdd(l):
-    res = None
-    for x in l:
-        count = l.count(x)
-        if count%2!=0:
-            res = x
-            break
-    return res
-l = [10,10,20,30,30]        
-print(onlyOdd(l))
+# def onlyOdd(l):
+#     res = None
+#     for x in l:
+#         count = l.count(x)
+#         if count%2!=0:
+#             res = x
+#             break
+#     return res
+# l = [10,10,20,30,30]        
+# print(onlyOdd(l))
+
+# Q8. Reverse the list using swap method
+
+# def rev_list(l):
+#     start = 0
+#     end = len(l)-1
+
+#     while start<end:
+#         l[start], l[end] = l[end], l[start]
+#         start = start + 1
+#         end = end -1
+
+# l = [50,60,70,80]
+# rev_list(l)
+# print(l)  # [80, 70, 60, 50] 
+
+# other method 1
+
+# new_list = []
+# l = [50,60,70,80]
+# for i in l:
+#     new_list.insert(0,i)
+# print(new_list)  # [80, 70, 60, 50]
+
+# other method 2
+
+# new_list = []
+# l = [50,60,70,80]
+# for i in range(len(l)-1,-1,-1):
+#     # print(l[i])
+#     new_list.append(l[i])
+
+# print(new_list)
