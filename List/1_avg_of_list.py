@@ -160,3 +160,42 @@
 #     new_list.append(l[i])
 
 # print(new_list)
+
+# Q8. Left Rotate array one
+
+# def leftRotate(l):
+#     n = len(l)
+#     x = l[0]
+
+#     for i in range(1,n):
+#         l[i-1] = l[i]
+
+#     l[n-1] = x
+
+    
+
+# l = [10,20,30,40,50]
+
+# leftRotate(l)
+# print(l)  # [20, 30, 40, 50, 10]
+
+
+# Q9. Left Rotate array by d Places
+
+# def lefRotateDplace(l,d):
+#     n = len(l)
+#     revList(l,0,d-1)
+#     revList(l,d,n-1)
+#     revList(l,0,n-1)
+
+# def revList(l, start, end):
+#     while start<end:
+#         l[start], l[end] = l[end], l[start]
+#         start = start + 1
+#         end = end - 1
+
+# l = [10,20,30,40,50]
+# d=3
+
+# lefRotateDplace(l,d)
+# print(l)

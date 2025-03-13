@@ -416,3 +416,123 @@ reversed() in python
 Goal:- To iterate over an iterable in order without mutating it.
 '''
 
+
+
+
+# def intersection(l1,l2):
+#     m = len(l1)
+#     n = len(l2)
+#     un = set()
+
+#     for i in range(m):
+#         un.add(l1[i])
+#     res = 0 
+#     print(un)
+
+#     for i in range(n):
+#         if l2[i] in un:
+#             res+=1
+#             un.remove(l2[i])
+#     return res
+
+# l1 = [10,20,30,70,10,20]
+# l2 = [20,70,30]
+# obj = intersection(l1,l2)
+# print(obj)
+
+
+# def pair_of_array(l1,sum):
+#     for i in range(len(l1)):
+#         for j in range(len(l1)):
+#             if l1[i]+l1[j]==sum:
+#                 return True
+#     return False
+
+# l1 = [3,2,8,15,-8]
+# sum = 9
+# obj = pair_of_array(l1,sum)
+# print(obj)
+
+
+# def isSubSum(arr,sum):
+#    s=0
+#    curr=0
+#    for e in range(len(arr)):
+#       curr = curr + arr[e]
+#       while curr>sum:
+#          curr = curr - arr[e]
+#          s = s + 1
+#       if (curr==sum):
+#         return True
+#    return False
+        
+        
+# l = [1,4,20,3,10,5]
+# sum = 33
+# print(isSubSum(l,sum))
+
+
+# def kadanes(nums):
+#    maxsum = nums[0]
+#    cursum =0
+
+#    for n in nums:
+#       cursum = max(cursum,0)
+#       cursum = cursum+n
+#       maxsum = max(cursum,maxsum)
+#    return maxsum
+
+# l = [4,-1,2,-7,3,4]
+# print(kadanes(l))
+        
+# l = [1,2,3,2,3,3]
+# print(min(len(l)))
+
+# def kMaxSum(arr,k):
+#     curr = 0
+#     for i in range(k):
+#         curr = curr + arr[i]
+#     res = curr 
+
+#     for i in range(k, len(arr)):
+#         curr = curr + arr[i] - arr[i-k]
+#         res = max(curr,res)
+#     return res
+
+# l=[1,8,30,-5,20,7]
+# k=4
+# print(kMaxSum(l,k))
+
+# def closeDuplicate(nums,k):
+#     L=0
+#     window = set()
+#     for R in range(len(nums)):
+#         if nums[R] in window:
+#             return True
+#         elif R-L+1>k:
+#             window.remove(nums[L])
+#             L = L + 1
+#         window.add(nums[R])
+#     return False
+    
+# l = [1,2,3,2,3,3]
+# k=3
+# print(closeDuplicate(l,k))
+
+# def kMaxSum(arr,k):
+#     curr = set()
+#     for i in range(k):
+#         print("k--->", i)
+#         curr.add(arr[i])
+
+#     for i in range(k, len(arr)):
+#         print("next-for-loop", arr[i], "i", i)
+#         if arr[i] in curr:
+#             print(arr[i])
+#             return True
+#         curr.add(arr[i])
+#     return False
+
+# l = [1,5,1,7,9,6]
+# k=3
+# print(kMaxSum(l,k))
