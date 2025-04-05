@@ -95,14 +95,43 @@
 #sort an array
 
 
-def sort_array(arr):
-    for i in range (len(arr)):
-        for j in range (len(arr)):
-            if arr[i]<arr[j]:
-                arr[i],arr[j] = arr[j], arr[i]
-    return arr
+# def sort_array(arr):
+#     for i in range (len(arr)):
+#         for j in range (len(arr)):
+#             if arr[i]<arr[j]:
+#                 arr[i],arr[j] = arr[j], arr[i]
+#     return arr
 
 
-nums = [5,2,3,1]
+# nums = [5,2,3,1]
 
-print(sort_array(nums))
+# print(sort_array(nums))
+
+
+# def TwoSum(arr, target):
+#     pre_map = {}
+#     for index,value in enumerate(arr):
+#         diff = target-value
+#         if diff in pre_map:
+#             return [pre_map[diff], index]
+#         pre_map[value] = index
+#     return []
+
+# nums = [2,5,7,9]
+# target = 9
+# print(TwoSum(nums, target))
+
+
+def hasPrfix(arr):
+    res = ""
+
+    for i in range (len(arr[0])):
+        for s in arr:
+            if s[i]!=(arr[0][i]):
+                return res
+        res = res + arr[0][i]
+    return res
+        
+
+strs = ["flower","flow","flight"]
+print(hasPrfix(strs))

@@ -54,3 +54,21 @@ def two_sum(arr, target):
 arr=[4,5,4,2,7]
 target = 8
 print(two_sum(arr,target))
+
+
+#Psuedo code
+
+"""
+FUNCTION TwoSum(arr, target):
+    pre_map = empty {}
+
+    for each index, value in enumrate(arr):
+            deff = target-value
+
+            if diff EXISTS in prev_map:
+                RETURN [pre_map[diff], index] // found the pair
+
+            pre_map[value] = index // Save current value at this index
+
+    RETURN empty list [] //No value found
+"""
