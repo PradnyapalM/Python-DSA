@@ -38,3 +38,19 @@ print(two_sum(arr,target))
 #             return(pre_map[diff], i)
 #         else pre_map[v]=i
 #     return
+
+def two_sum(arr, target):
+    prev_map={}
+    for i,v in enumerate(arr):
+        diff = target-v
+        if diff in prev_map:
+            print(prev_map)
+            print("diff",prev_map[diff])
+            return(prev_map[diff],i)
+        prev_map[v]=i
+        print(prev_map)
+    return 
+
+arr=[4,5,4,2,7]
+target = 8
+print(two_sum(arr,target))
