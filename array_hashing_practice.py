@@ -122,16 +122,10 @@
 # print(TwoSum(nums, target))
 
 
-def hasPrfix(arr):
-    res = ""
+# def MajorityElement(arr):
+#     count = {}
 
-    for i in range (len(arr[0])):
-        for s in arr:
-            if s[i]!=(arr[0][i]):
-                return res
-        res = res + arr[0][i]
-    return res
+#     for i in arr:
+#         count = count.get(i,0)+1
         
-
-strs = ["flower","flow","flight"]
-print(hasPrfix(strs))
+#         if 
