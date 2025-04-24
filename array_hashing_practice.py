@@ -129,3 +129,23 @@
 #         count = count.get(i,0)+1
         
 #         if 
+
+"""
+Example 1:
+Input: nums = [100,4,200,1,3,2]
+Output: 4
+"""
+
+def longSeq(nums):
+    num_list = list(set(nums))
+    res = [1,]
+    for i in num_list:
+        if i+1 in num_list:
+            res.append(i+1)
+    return len(res)
+
+nums = [1,0,1,2]
+print(longSeq(nums))
+
+
+
